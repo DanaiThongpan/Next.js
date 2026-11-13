@@ -1,0 +1,104 @@
+.section {
+  container-type: inline-size;
+  min-width: 0;
+}
+
+.content {
+  min-width: 0;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  font-size: .875rem;
+}
+
+.table th,
+.table td {
+  padding: .75rem .5rem;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.table th:nth-child(1) { width: 5%; }
+.table th:nth-child(2) { width: 20%; }
+.table th:nth-child(3) { width: 25%; }
+.table th:nth-child(4) { width: 20%; }
+.table th:nth-child(5) { width: 15%; }
+.table th:nth-child(6) { width: 15%; }
+
+.table td span {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+@container (max-width: 760px) {
+  .table,
+  .table tbody {
+    display: block;
+  }
+
+  .table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+
+  .table tbody {
+    display: grid;
+    gap: .875rem;
+  }
+
+  .table tbody tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: .75rem 1rem;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: .75rem;
+    background: #fff;
+  }
+
+  .table td {
+    display: block;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .table td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: .2rem;
+    color: #64748b;
+    font-size: .75rem;
+    font-weight: 400;
+  }
+
+  .table td[data-label="รายการ"],
+  .table td[colspan] {
+    grid-column: 1 / -1;
+  }
+}
+
+@container (max-width: 340px) {
+  .table tbody tr {
+    grid-template-columns: minmax(0, 1fr);
+    padding: .75rem;
+  }
+}
+
+@media print {
+  .section {
+    container-type: normal;
+  }
+
+  .table {
+    font-size: 10pt;
+  }
+}

@@ -1,0 +1,26 @@
+.daam-admin { width: 100%; height: 100dvh; overflow: hidden; background: #f4f6f9; color: #212529; font-family: 'Sarabun', 'Segoe UI', sans-serif; }
+.daam-admin #app-layout { height: 100dvh; max-height: 100dvh; }
+.daam-admin #sidebar { min-height: 0; }
+.daam-admin h1, .daam-admin h2, .daam-admin h3, .daam-admin h4, .daam-admin h5 { font-family: 'Prompt', 'Sarabun', sans-serif; }
+.daam-admin .sidebar-menu-scroll { min-height: 0; }
+.daam-admin .migration-menu-label { display: block; font-size: .62rem; opacity: .65; padding-left: 34px; margin-top: 1px; }
+.daam-admin .metric-unmapped { font-size: .85rem; min-height: 48px; line-height: 1.6; padding: .5rem 0; font-weight: 600; }
+.daam-admin .widget-unmapped { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 12px; color: #64748b; padding: 1rem; min-height: 160px; }
+.daam-admin .widget-unmapped small { overflow-wrap: anywhere; }
+.daam-admin .navbar-title { font-size: 1.05rem; }
+.daam-admin .table-activity { min-width: 650px; }
+.daam-admin .status-legend-card { border-color: #e2e8f0; }
+.daam-admin .stat-card-enterprise .content-real { z-index: 1; position: relative; }
+.daam-admin .stat-card-enterprise:has(.metric-unmapped) .stat-badge { font-size: .68rem; }
+.daam-admin .admin-mobile-drawer { background: #1e293b; color: white; border: 0; padding: 0; margin: 0 auto 0 0; width: 280px; max-width: 90vw; height: 100dvh; max-height: 100dvh; }
+.daam-admin .admin-mobile-drawer::backdrop { background: rgba(15,23,42,.55); }
+.daam-admin .admin-mobile-drawer[open] { display: flex; flex-direction: column; }
+.daam-admin .drawer-content { display: flex; flex-direction: column; min-height: 0; flex: 1; }
+.daam-admin .drawer-content .sidebar-brand { display: none; }
+.daam-admin .min-width-0 { min-width: 0; }
+.daam-admin .migration-chip { white-space: normal; font-size: .72rem; }
+@media (max-width: 575.98px) { .daam-admin .navbar-title { max-width: 190px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .9rem; } }
+@media (prefers-reduced-motion: reduce) { .daam-admin *, .daam-admin *::before { animation: none !important; transition: none !important; } }
+
+.daam-admin .bg-purple-subtle { background-color: #f3e8ff; }
+.daam-admin .text-purple { color: #7e22ce; }

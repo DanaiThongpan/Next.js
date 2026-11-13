@@ -1,0 +1,5 @@
+.daam-workspace { min-height: 100vh; background: #f4f6f9; color: #212529; font-family: 'Segoe UI', Tahoma, sans-serif; }
+.daam-workspace .daam-sidebar { background: #17263c; color: white; }
+.daam-workspace .daam-sidebar a { color: #e2e8f0; text-decoration: none; display: block; padding: .65rem .85rem; border-radius: .4rem; }
+.daam-workspace .daam-sidebar a:hover, .daam-workspace .daam-sidebar a[aria-current=page] { background: #0d6efd; color: white; }
+@media (min-width: 768px) { .daam-workspace .daam-sidebar { min-height: 100vh; } }

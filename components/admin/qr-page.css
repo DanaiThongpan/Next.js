@@ -1,0 +1,127 @@
+.qr-batch-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.qr-batch-page .filter-card {
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px #18314b08;
+}
+
+.qr-batch-page .form-label,
+.qr-batch-page .form-check-label {
+  color: #6c757d;
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.qr-batch-page .form-select,
+.qr-batch-page .form-control {
+  border-color: #dee2e6;
+  border-radius: 7px;
+}
+
+.qr-batch-page .qr-scan-url {
+  font-family: monospace;
+  font-size: .8rem;
+}
+
+.qr-size-panel {
+  display: grid;
+  grid-template-columns: 1.35fr 1.7fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 2px 4px #18314b08;
+}
+
+.qr-size-range {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: .5rem;
+  color: #6c757d;
+  font-size: .8rem;
+}
+
+.qr-size-range input {
+  flex: 1;
+  min-width: 0;
+  accent-color: #0d6efd;
+}
+
+.qr-original-sticker .sticker-header {
+  display: flex;
+  gap: .5mm;
+  align-items: baseline;
+}
+
+.qr-original-sticker .sticker-cat-badge {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.qr-original-sticker .sticker-org-title {
+  flex-shrink: 0;
+}
+
+.qr-original-sticker .sticker-footer {
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  line-height: 1.2;
+}
+
+.qr-original-sticker .sticker-asset-number,
+.qr-original-sticker .sticker-asset-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.qr-original-sticker .sticker-asset-number {
+  -webkit-line-clamp: 2;
+}
+
+.qr-original-sticker .sticker-asset-name {
+  margin-top: .25mm;
+  -webkit-line-clamp: 3;
+}
+
+.qr-original-sticker.sticker-micro .sticker-asset-name {
+  -webkit-line-clamp: 2;
+}
+
+.qr-batch-page .qr-size-panel button {
+  min-height: 40px;
+}
+
+@media (max-width: 991px) {
+  .qr-size-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .qr-batch-heading h4 {
+    font-size: 1.15rem;
+  }
+}
+
+@media print {
+  .qr-size-panel,
+  .qr-batch-heading {
+    display: none !important;
+  }
+}
